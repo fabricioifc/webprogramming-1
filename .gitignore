@@ -10,3 +10,16 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/Aulas/CalculadoraServlet/build/
+/Aulas/Aula 05/CalcularMedia/nbproject/private/
+/Aulas/Aula 05/CalcularMedia/build/
+/Aulas/Aula 06/CalculoIMC/nbproject/private/
+/Aulas/Aula 06/CalculoIMC/build/
+/Aulas/Aula 07/Tabuada/build/
+/Aulas/Aula 09/Contador/nbproject/private/
+/Aulas/Aula 10/ServletSession02/nbproject/private/
+/Aulas/Aula 10/ServletSession02/build/
+/Aulas/Aula 10/ContatosSession/nbproject/private/
+/Aulas/Aula 11/SistemaLogin08/nbproject/private/
+/Aulas/Aula 11/SistemaLogin08/build/
+/Aulas/Aula 11/SistemaLogin08/dist/
