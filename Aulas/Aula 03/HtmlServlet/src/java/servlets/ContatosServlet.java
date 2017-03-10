@@ -25,7 +25,6 @@ public class ContatosServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -34,8 +33,10 @@ public class ContatosServlet extends HttpServlet {
             out.println("<body>");
 
             out.println("<h3>Informações recebidas com sucesso!</h3>");
-            out.println("<p><strong>Nome: </strong>" + request.getParameter("nome") + "</p>");
-            out.println("<p><strong>E-mail: </strong>" + request.getParameter("email") + "</p>");
+            out.println("<p><strong>Nome: </strong>"
+                    + request.getParameter("nome") + "</p>");
+            out.println("<p><strong>E-mail: </strong>"
+                    + request.getParameter("email") + "</p>");
             out.println("<p><strong>Mensagem: </strong></p>");
             out.println("<p>" + request.getParameter("texto") + "</p>");
 
