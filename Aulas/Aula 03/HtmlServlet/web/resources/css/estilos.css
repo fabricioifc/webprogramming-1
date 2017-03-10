@@ -1,44 +1,20 @@
 body {
-    font: 62.5%/1 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+    font: 62.5%/1 "Myriad Pro", Frutiger, "Lucida Grande", 
+        "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
 }
-form {
-    font-size: 1.4em;
-    width: 500px;
-}
-/* fieldset styling */
-fieldset {
-    margin: 1em 0; /*  space out the fieldsets a little*/
-    padding: 1em;
-    border : 1px solid #ccc;
-    background-color:#F5F5F5
-}
-/* legend styling */
-legend {
-    font-weight: bold;
-}
-form p {
-    position: relative;
-    width: 100%;
-}
-label {
-    float: left;
-    width: 100px;
-}
-/* style for required labels */
-label .required {
-    font-size: 0.83em;
-    color:#760000;
-}
-input {
-    width: 200px;
-}
+form { font-size: 1.4em; width: 500px; }
+fieldset { margin: 1em 0; padding: 1em; border : 1px solid #ccc; background-color:#F5F5F5 }
+legend { font-weight: bold; }
+form p { position: relative; width: 100%; }
+label { float: left; width: 100px; }
+label .required { font-size: 0.83em; color:#760000; }
+input { width: 200px; }
+
 input[type="text"], textarea {
-    border-top: 2px solid #999;
-    border-left: 2px solid #999;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    border-top: 2px solid #999; border-left: 2px solid #999;
+    border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;
 }
-/* style form elements on focus */
+
 input:focus, textarea:focus {
     background: #ffc;
 }
