@@ -42,16 +42,17 @@ public class CalculadoraServlet extends HttpServlet {
         response.setContentType("text/html");
         response.setStatus(HttpServletResponse.SC_OK);
 
-        double operand1 = Double.valueOf(request.getParameter(NUMERO1_PARAMETRO));
-        double operand2 = Double.valueOf(request.getParameter(NUMERO2_PARAMETRO));
-        String operation = request.getParameter(OPERACAO_PARAMETRO);
-
-        String resultado = calcular(operand1, operand2, operation);
+        String resultado = calcular(
+                Double.valueOf(request.getParameter("n1")),
+                Double.valueOf(request.getParameter("n2")),
+                request.getParameter("operacao")
+        );
 
         response.getWriter().println("<h1>" + resultado + "</h1>");
     }
 
-    private String calcular(double operand1, double operand2, String operation) {
+    private String calcular(double operand1, double operand2, 
+            String operation) {
         String result = String.valueOf(operand1) + " "
                 + operation + " " + String.valueOf(operand2) + " = ";
         switch (operation) {
