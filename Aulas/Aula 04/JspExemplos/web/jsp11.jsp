@@ -16,7 +16,7 @@
 
         <%
             Date criadaEm = criadaEm = new Date(session.getCreationTime());;
-            Date ultimoAcesso = ultimoAcesso = new Date(session.getLastAccessedTime());;
+            Date ultimoAcesso = ultimoAcesso = new Date(session.getLastAccessedTime());
             Integer contadorVisitas = 0;
             String contadorVisitasChave = "contadorVisitas";
             String usuarioId = "IFC";
