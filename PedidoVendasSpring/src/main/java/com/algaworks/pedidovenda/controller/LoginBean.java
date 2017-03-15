@@ -32,6 +32,7 @@ public class LoginBean implements Serializable {
 	private String email;
 
 	public void preRender() {
+            System.out.println(request.getParameter("invalid"));
 		if ("true".equals(request.getParameter("invalid"))) {
 			FacesUtil.addErrorMessage("Usuário ou senha inválido!");
 		}

@@ -7,10 +7,10 @@ com/algaworks/pedidovenda/controller/CadastroPedidoBean.class
 com/algaworks/pedidovenda/controller/PesquisaPedidosBean$1.class
 com/algaworks/pedidovenda/security/AppUserDetailsService.class
 com/algaworks/pedidovenda/controller/PesquisaPedidosBean.class
-com/algaworks/pedidovenda/repository/Usuarios.class
 com/algaworks/pedidovenda/util/jsf/FacesProducer.class
-com/algaworks/pedidovenda/model/Produto.class
+com/algaworks/pedidovenda/repository/Usuarios.class
 com/algaworks/pedidovenda/security/UsuarioLogado.class
+com/algaworks/pedidovenda/model/Produto.class
 com/algaworks/pedidovenda/controller/PedidoEdicao.class
 com/algaworks/pedidovenda/model/Cliente.class
 com/algaworks/pedidovenda/security/Seguranca.class
@@ -22,8 +22,8 @@ com/algaworks/pedidovenda/service/EstoqueService.class
 com/algaworks/pedidovenda/security/UsuarioSistema.class
 com/algaworks/pedidovenda/util/jpa/Transactional.class
 com/algaworks/pedidovenda/service/NegocioException.class
-com/algaworks/pedidovenda/model/vo/DataValor.class
 com/algaworks/pedidovenda/converter/ClienteConverter.class
+com/algaworks/pedidovenda/model/vo/DataValor.class
 com/algaworks/pedidovenda/service/CadastroPedidoService.class
 com/algaworks/pedidovenda/repository/Clientes.class
 com/algaworks/pedidovenda/security/JsfLoginUrlAuthenticationEntryPoint.class
