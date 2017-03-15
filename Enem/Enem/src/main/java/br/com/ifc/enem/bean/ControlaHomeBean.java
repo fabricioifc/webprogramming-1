@@ -5,7 +5,7 @@
 package br.com.ifc.enem.bean;
 
 import br.com.ifc.enem.entidades.Usuarios;
-import br.com.ifc.enem.util.JpaUtil;
+import br.com.ifc.enem.core.JpaUtil;
 import java.util.List;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;

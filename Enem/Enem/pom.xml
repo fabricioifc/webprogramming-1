@@ -15,10 +15,11 @@
         <!--<spring.version>3.2.8.RELEASE</spring.version>-->
         <org.springframework.security.version>4.2.2.RELEASE</org.springframework.security.version>
         <org.springframework.version>4.2.2.RELEASE</org.springframework.version>
+        <mysql.connector.version>6.0.6</mysql.connector.version>
     </properties>
     
     <dependencies>
-<!--        <dependency>
+        <!--        <dependency>
             <groupId>br.com.serhmatica</groupId>
             <artifactId>opensutils-br4j</artifactId>
             <version>0.2</version>
@@ -51,6 +52,11 @@
             <version>4.3.7.Final</version>
         </dependency>
         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.4.0.Final</version>
+        </dependency>
+        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
@@ -64,7 +70,8 @@
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
-            <version>5.0</version>
+            <version>6.0</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.primefaces.extensions</groupId>
@@ -72,7 +79,7 @@
             <version>1.2.1</version>
         </dependency>
             
-<!--        <dependency>
+        <!--        <dependency>
             <groupId>org.primefaces.themes</groupId>
             <artifactId>bootstrap</artifactId>
             <version>1.0.10</version>
@@ -154,32 +161,42 @@
             <version>${org.springframework.version}</version>
         </dependency>
         
-        
         <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
             <version>${org.springframework.security.version}</version>
         </dependency>
-        
-
-        
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-taglibs</artifactId>
             <version>${org.springframework.security.version}</version>
         </dependency>
-         
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
             <version>${org.springframework.security.version}</version>
         </dependency>
- 
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
             <version>${org.springframework.security.version}</version>
+        </dependency>
+        
+        <!-- MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        
+        <!-- Mojarra (implementacao do JSF) -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.faces</artifactId>
+            <version>2.2.14</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

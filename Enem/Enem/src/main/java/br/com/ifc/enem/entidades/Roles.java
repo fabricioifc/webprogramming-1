@@ -31,7 +31,7 @@ import org.springframework.security.core.GrantedAuthority;
 @NamedQueries({
     @NamedQuery(name = "Roles.findAll", query = "SELECT r FROM Roles r")
     , @NamedQuery(name = "Roles.findByDescricao", query = "SELECT r FROM Roles r WHERE r.descricao = :descricao")})
-public class Roles implements Serializable, GrantedAuthority {
+public class Roles implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -91,9 +91,4 @@ public class Roles implements Serializable, GrantedAuthority {
         return "br.com.ifc.enem.entidades.Roles[ descricao=" + descricao + " ]";
     }
 
-    @Override
-    public String getAuthority() {
-        return this.descricao;
-    }
-    
 }

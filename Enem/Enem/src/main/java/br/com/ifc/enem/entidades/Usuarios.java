@@ -38,7 +38,7 @@ import org.springframework.security.core.userdetails.UserDetails;
     , @NamedQuery(name = "Usuarios.findByNome", query = "SELECT u FROM Usuarios u WHERE u.nome = :nome")
     , @NamedQuery(name = "Usuarios.findByEmail", query = "SELECT u FROM Usuarios u WHERE u.email = :email")
     , @NamedQuery(name = "Usuarios.findBySenha", query = "SELECT u FROM Usuarios u WHERE u.senha = :senha")})
-public class Usuarios implements Serializable, UserDetails {
+public class Usuarios implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -64,11 +64,6 @@ public class Usuarios implements Serializable, UserDetails {
     private String senha;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "usuarioId")
     private Collection<UsuarioRoles> usuarioRolesCollection;
-
-    private boolean accountNonExpired = true;
-    private boolean accountNonLocked = true;
-    private boolean credentialsNonExpired = true;
-    private boolean enabled = true;
 
     public Usuarios() {
     }
@@ -148,41 +143,6 @@ public class Usuarios implements Serializable, UserDetails {
     @Override
     public String toString() {
         return "br.com.ifc.enem.entidades.Usuarios[ id=" + id + " ]";
-    }
-
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getPassword() {
-        return senha;
-    }
-
-    @Override
-    public String getUsername() {
-        return email;
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return accountNonExpired;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return accountNonLocked;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return credentialsNonExpired;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return enabled;
     }
 
 }

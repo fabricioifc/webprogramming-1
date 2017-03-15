@@ -7,7 +7,7 @@ package br.com.ifc.enem.bean;
 
 import javax.ejb.Stateless;
 import br.com.ifc.enem.entidades.Usuarios;
-import br.com.ifc.enem.util.JpaUtil;
+import br.com.ifc.enem.core.JpaUtil;
 import br.com.ifc.enem.bean.remote.ControlaUsuariosRemote;
 import br.com.ifc.enem.entidades.UsuarioRoles;
 import java.util.List;
