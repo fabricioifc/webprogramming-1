@@ -1,0 +1,11 @@
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/web/core/CustomAuthenticationProvider.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/bean/remote/ControlaUsuariosRemote.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/web/core/AutenticacaoUsuario.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/bean/remote/ControlaHomeRemote.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/web/controller/HomeMB.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/bean/ControlaUsuariosBean.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/entidades/Usuarios.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/util/JpaUtil.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/bean/ControlaHomeBean.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/entidades/UsuarioRoles.java
+/home/fabricio/NetBeansProjects/Enem/Enem/src/main/java/br/com/ifc/enem/entidades/Roles.java
