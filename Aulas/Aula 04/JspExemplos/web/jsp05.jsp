@@ -16,7 +16,7 @@ submeter para a mesma página, via POST
         <% String nome = request.getParameter("nome"); %>
         <% String idade = request.getParameter("idade");%>
 
-        <form action="jsp04.jsp" method="POST">
+        <form action="jsp05.jsp" method="POST">
             Nome: <input type="text" name="nome" value="<%= nome%>" />
             Idade: <input type="text" name="idade" value="<%= idade%>" />
             <input type="submit" value="Clique aqui" />

@@ -26,6 +26,8 @@
             <li><a href="jsp09.jsp">JSP09</a></li>
             <li><a href="jsp10.jsp">JSP10</a></li>
             <li><a href="jsp11.jsp">JSP11</a></li>
+            <li><a href="jsp12_fibonacci.jsp">JSP12_Fibonacci</a></li>
+            <li><a href="jsp13_fgts.jsp">JSP13_FGTS</a></li>
         </ul>
 
         <hr>

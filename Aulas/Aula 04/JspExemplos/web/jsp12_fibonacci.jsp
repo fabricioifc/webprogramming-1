@@ -17,7 +17,7 @@
             }
         %>
 
-        <form action="fibonacci.jsp" method="POST">
+        <form action="jsp12_fibonacci.jsp" method="POST">
             Número inteiro: <input type="text" name="numero" value="<%= numero%>" />
             <input type="submit" value="Calcular fibonacci" />
         </form>
