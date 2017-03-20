@@ -28,10 +28,9 @@
         </fieldset>
 
         <%
-
-            if (!request.getParameter("nome").equals("")
-                    && !request.getParameter("salario").equals("")
-                    && !request.getParameter("periodo").equals("")) {
+            if (request.getParameter("nome") != null
+                    && request.getParameter("salario") != null
+                    && request.getParameter("periodo") != null) {
 
                 nome = request.getParameter("nome");
                 salario = Double.parseDouble(request.getParameter("salario"));
@@ -45,7 +44,7 @@
         <fieldset>
             <legend>Resultado</legend>
             <% if (resultado != null) {%>
-                O funcionário <%= nome %> recebeu R$<%= resultado %> de FGTS por <%= periodo %> meses.
+            O funcionário <%= nome%> recebeu R$<%= resultado%> de FGTS por <%= periodo%> meses.
             <%}%>
         </fieldset>
 
