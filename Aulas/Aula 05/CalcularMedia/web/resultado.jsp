@@ -8,7 +8,14 @@
     <body>
         <p>
             <%= "A média do aluno "
-                    + request.getParameter("nome") + " referente as notas ("
+                    + request.getParameter("nome")
+                    + " do sexo "
+                    + request.getParameter("sexo")
+                    + ", na disciplina de "
+                    + request.getParameter("disciplina")
+                    + ", com o professor "
+                    + request.getParameter("professor")
+                    + ", referente as notas ("
                     + request.getParameter("n1") + ", "
                     + request.getParameter("n2") + ", "
                     + request.getParameter("n3") + ", "
