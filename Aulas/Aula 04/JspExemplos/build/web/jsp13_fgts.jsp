@@ -29,12 +29,12 @@
             Salário: <input type="text" name="salario" 
                             value="<%= salario == null ? "" : salario%>" />
             Período: <input type="text" name="periodo" 
-                            value="<%= periodo == null ? "" : periodo%>" />
+                            value="<%= periodo == null ? "" : periodo%>" /> <br /> <br />
             <input type="submit" value="Calcular" />
         </form>
 
         <%if (resultado != null) {%>
-        Resultado: <%= resultado%>
+            <p>Resultado: <%= resultado%></p>
         <%}%>
 
     </body>
