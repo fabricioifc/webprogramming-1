@@ -20,8 +20,8 @@ public class Disciplinas implements Serializable {
         return manager.find(Disciplina.class, id);
     }
 
-    public Disciplina salvar(Disciplina pedido) {
-        return this.manager.merge(pedido);
+    public Disciplina salvar(Disciplina disciplina) {
+        return this.manager.merge(disciplina);
     }
 
     public List<Disciplina> todas(Boolean idativo) {
