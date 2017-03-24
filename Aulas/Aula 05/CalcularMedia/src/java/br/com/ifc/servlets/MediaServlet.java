@@ -15,6 +15,7 @@ public class MediaServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
 
         double n1 = Double.parseDouble(request.getParameter("n1"));
         double n2 = Double.parseDouble(request.getParameter("n2"));
