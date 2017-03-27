@@ -21,7 +21,9 @@ public class Aluno {
     public Aluno() {
     }
 
-    public Aluno(String nome, Character sexo, String disciplina, String professor, double[] notas, String media) {
+    public Aluno(String nome, Character sexo, 
+            String disciplina, String professor, 
+            double[] notas, String media) {
         this.nome = nome;
         this.sexo = sexo;
         this.disciplina = disciplina;
@@ -29,6 +31,8 @@ public class Aluno {
         this.notas = notas;
         this.media = media;
     }
+    
+//    get e set
 
     public String getMedia() {
         return media;
