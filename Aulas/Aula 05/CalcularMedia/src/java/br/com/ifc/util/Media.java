@@ -21,7 +21,7 @@ public class Media {
     }
     
 //    public static void main(String args[]){
-//        Media m = new Media(new double[]{9, 8, 8.5, 7.23});
+//        Media m = new Media(teste);
 //        System.out.println(m.calcularMedia());
 //    }
 
