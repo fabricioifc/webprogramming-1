@@ -17,8 +17,11 @@
         <fieldset>
             <legend>Calcular IMC</legend>
             <form name="formulario" action="CalcularIMC">
-                Peso: <input type="text" name="peso" value="<c:out value="<%= request.getParameter("peso") %>" />" />
-                Altura: <input type="text" name="altura" value="<c:out value="<%= request.getParameter("altura") %>" />"  />
+                Nome: <input type="text" name="nome" />
+                Masculino: <input type="radio" name="sexo" value="M" />
+                Feminino: <input type="radio" name="sexo" value="F" />
+                Peso: <input type="text" name="peso" />
+                Altura: <input type="text" name="altura" />
                 <input type="submit" name="salvar" value="Calcular" />
             </form>
         </fieldset>
