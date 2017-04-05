@@ -9,33 +9,4 @@
 *.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-/Aulas/CalculadoraServlet/build/
-/Aulas/Aula 05/CalcularMedia/nbproject/private/
-/Aulas/Aula 05/CalcularMedia/build/
-/Aulas/Aula 06/CalculoIMC/nbproject/private/
-/Aulas/Aula 06/CalculoIMC/build/
-/Aulas/Aula 07/Tabuada/build/
-/Aulas/Aula 09/Contador/nbproject/private/
-/Aulas/Aula 10/ServletSession02/nbproject/private/
-/Aulas/Aula 10/ServletSession02/build/
-/Aulas/Aula 10/ContatosSession/nbproject/private/
-/Aulas/Aula 11/SistemaLogin08/nbproject/private/
-/Aulas/Aula 11/SistemaLogin08/build/
-/Aulas/Aula 11/SistemaLogin08/dist/
-/Aulas/Aula 03/HtmlServlet/dist/
-/Aulas/Aula 03/AtividadeExtra/nbproject/private/
-/Aulas/Aula 03/AtividadeExtra/build/
-/Aulas/Aula 03/AtividadeExtra/dist/
-/Aulas/Aula 03/JSP01/nbproject/private/
-/Aulas/Aula 03/JSP01/dist/
-/Aulas/Aula 03/JSP01/build/
-/Aulas/Aula 03/FibonacciServlet/nbproject/private/
-/Aulas/Aula 03/FibonacciServlet/dist/
-/Aulas/Aula 03/FibonacciServlet/build/
-/Aulas/Aula 05/CalcularMedia/dist/
-/Enem/Enem_erro/target/
-/PedidoVendasSpring (cópia)/target/
-/EnemSpring/target/
-/Aulas/Aula 05/CalcularMedia2/nbproject/private/
-/Aulas/Aula 05/CalcularMedia2/build/
+# hs_err_pid*
