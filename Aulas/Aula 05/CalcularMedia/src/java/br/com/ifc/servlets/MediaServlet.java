@@ -2,6 +2,7 @@ package br.com.ifc.servlets;
 
 import br.com.ifc.util.Media;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,18 +22,13 @@ public class MediaServlet extends HttpServlet {
         double n3 = Double.parseDouble(request.getParameter("n3"));
         double n4 = Double.parseDouble(request.getParameter("n4"));
 
-        String media = new Media(new double[]{n1, n2, n3, n4}).calcularMedia();
+        double[] notas = new double[]{n1, n2, n3, n4};
+        
+        Media minhaClasseDeMedia = new Media(notas);
 
-        request.setAttribute("media", media);
+        request.setAttribute("media", minhaClasseDeMedia.calcularMedia());
         request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
-    }
-
-    @Override
-    protected void doGet(HttpServletRequest request,
-            HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
     }
 
     @Override
