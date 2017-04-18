@@ -10,3 +10,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 # hs_err_pid*
+/Aulas/Aula 10/ContatosSession/build/
+/Aulas/Aula 10/ContatosSession/dist/
+/Aulas/Aula 10/ContatosSessionEstilo/nbproject/private/
+/Aulas/Aula 10/ContatosSessionEstilo/build/
