@@ -4,9 +4,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Resultado</title>
+        <link href="resources/css/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <p>
+        <p class="well">
             <%= "A média do aluno "
                     + request.getParameter("nome")
                     + " do sexo "

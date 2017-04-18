@@ -15,16 +15,16 @@
             <legend>Calcular IMC</legend>
             <form name="formulario" action="CalcularIMC">
                 Nome: <input type="text" name="nome" />
-                Masculino: <input type="radio" name="sexo" value="M" />
-                Feminino: <input type="radio" name="sexo" value="F" />
+                Sexo:
+                <select name="sexo" required>
+                    <option>Selecione o Sexo</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
                 Peso: <input type="text" name="peso" />
                 Altura: <input type="text" name="altura" />
                 <input type="submit" name="salvar" value="Calcular" />
             </form>
         </fieldset>
-        <div>
-            <p>IMC: <%= request.getAttribute("imc")%></p>
-            <p>Condição: <%= request.getAttribute("condicao")%></p>
-        </div>
     </body>
 </html>

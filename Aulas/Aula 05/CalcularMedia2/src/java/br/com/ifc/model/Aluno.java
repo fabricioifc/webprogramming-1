@@ -18,27 +18,12 @@ public class Aluno {
     private double[] notas;
     private String media;
 
-    public Aluno() {
-    }
-
-    public Aluno(String nome, Character sexo, 
-            String disciplina, String professor, 
-            double[] notas, String media) {
+    public Aluno(String nome, Character sexo, String disciplina, String professor, double[] notas, String media) {
         this.nome = nome;
         this.sexo = sexo;
         this.disciplina = disciplina;
         this.professor = professor;
         this.notas = notas;
-        this.media = media;
-    }
-    
-//    get e set
-
-    public String getMedia() {
-        return media;
-    }
-
-    public void setMedia(String media) {
         this.media = media;
     }
 
@@ -80,6 +65,14 @@ public class Aluno {
 
     public void setNotas(double[] notas) {
         this.notas = notas;
+    }
+
+    public String getMedia() {
+        return media;
+    }
+
+    public void setMedia(String media) {
+        this.media = media;
     }
 
 }

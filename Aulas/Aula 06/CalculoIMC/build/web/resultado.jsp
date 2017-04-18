@@ -8,6 +8,9 @@
     <body>
         <fieldset>
             <legend>Resultado</legend>
+            <p>Nome: <%= request.getParameter("nome") %></p>
+            <p>IMC: <%= request.getAttribute("imc") %></p>
+            <p>Resultado: <%= request.getAttribute("condicao") %></p>
         </fieldset>
     </body>
 </html>

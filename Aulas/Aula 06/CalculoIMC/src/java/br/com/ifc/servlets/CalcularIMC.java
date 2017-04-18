@@ -62,7 +62,7 @@ public class CalcularIMC extends HttpServlet {
 
             request.setAttribute("imc", imc);
             request.setAttribute("condicao", condicao);
-            request.getRequestDispatcher("index.jsp").forward(request, resp);
+            request.getRequestDispatcher("resultado.jsp").forward(request, resp);
         }
     }
 }
