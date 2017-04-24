@@ -9,3 +9,8 @@
 *.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+/Aulas/Aula 10/ContatosSession/build/
+/Aulas/Aula 10/ContatosSession/dist/
+/Aulas/Aula 10/ContatosSession02/nbproject/private/
+/Aulas/Aula 10/ContatosSession02/build/
+/Aulas/Aula 10/ContatosSession02/dist/
