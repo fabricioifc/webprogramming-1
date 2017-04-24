@@ -36,7 +36,8 @@ public class MediaServlet extends HttpServlet {
         );
 
         //Pega a lista de alunos da sessão
-        List<Aluno> alunos = (List<Aluno>) request.getSession().getAttribute("alunos");
+        List<Aluno> alunos = (List<Aluno>) 
+                request.getSession().getAttribute("alunos");
         if (alunos == null) {
             alunos = new ArrayList<>();
         }

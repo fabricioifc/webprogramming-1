@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="resources/css/estilos.css" />
+    </head>
+    <body>
+        <form id="comments_form" action="ContatosServlet" method="GET">
+            <fieldset>
+                <legend>Detalhes para contato</legend>
+                <p>
+                    <label for="nome">Nome: <span class="required">*</span></label>
+                    <input name="nome" id="nome" type="text" required autofocus />
+                </p>
+                <p>
+                    <label for="email">Email: </label>
+                    <input name="email" id="email" type="text" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Comentários</legend>
+                <p>
+                    <label for="texto">Mensagem: <span class="required">*</span></label>
+                    <textarea name="texto" id="texto" cols="20" rows="10"></textarea>
+                </p>
+            </fieldset>
+            <p><input id="submit" name="submit" type="submit"/></p>
+        </form>
+    </body>
+</html>

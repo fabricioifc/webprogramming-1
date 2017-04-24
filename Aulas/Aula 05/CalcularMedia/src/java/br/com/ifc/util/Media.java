@@ -4,10 +4,10 @@ import java.text.DecimalFormat;
 
 public class Media {
 
-    private final double notas[];
+    private double[] notas;
 
-    public Media(double[] notas) {
-        this.notas = notas;
+    public Media(double[] notasDoServlet) {
+        this.notas = notasDoServlet;
     }
 
     public String calcularMedia() {
@@ -19,10 +19,4 @@ public class Media {
         double media = soma / notas.length;
         return df.format(media);
     }
-    
-//    public static void main(String args[]){
-//        Media m = new Media(new double[]{9, 8, 8.5, 7.23});
-//        System.out.println(m.calcularMedia());
-//    }
-
 }
