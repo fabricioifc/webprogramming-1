@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package servlets;
+package br.com.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,19 +18,19 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author fabricio
  */
-@WebServlet(name = "CandidatoServlet", urlPatterns = {"/CandidatoServlet"})
-public class CandidatoServlet extends HttpServlet {
+@WebServlet(name = "Confirmacao", urlPatterns = {"/Confirmacao"})
+public class Confirmacao extends HttpServlet {
+
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=UTF-8");
-
-        if (request.getParameter("curso").equals("Curso Técnico em Alimentos")) {
-            request.getRequestDispatcher("indisponivel.jsp").forward(request, response);
-        } else {
-            request.getRequestDispatcher("resultado.jsp").forward(request, response);
-        }
+        
+        request.getRequestDispatcher("resultado.jsp").forward(request, response);
     }
 }
