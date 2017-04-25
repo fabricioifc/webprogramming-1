@@ -18,35 +18,13 @@
     </head>
     <body>
         <div class="container">
-            <fieldset>
-                <legend>Contatos</legend>
-               <form action="adicionarContato" method="POST" class="form-horizontal">
-                    <div class="form-group">
-                        <label for="nome" class="control-label col-md-3">Nome</label>
-                        <div class="col-md-9">
-                            <input type="text" name="nome" class="form-control" autofocus="true" required="true"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="control-label col-md-3">E-mail</label>
-                        <div class="col-md-9">
-                            <input type="text" name="email" class="form-control" 
-                                   required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-3 col-md-9">
-                            <input type="submit" value="Gravar" class="btn btn-primary"/>
-                        </div>
-                    </div>
-                </form>
-            </fieldset>
-
+            <p><a href="adicionarContato?acao=inserir">Adicionar</a></p>
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Nome</th>
                         <th>E-mail</th>
+                        <th colspan="2">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,6 +32,8 @@
                         <tr>
                             <td>${contato.nome}</td>
                             <td>${contato.email}</td>
+                            <td><a href="adicionarContato?acao=editar&email=<c:out value="${contato.email}"/>">Editar</a></td>
+                            <td><a href="adicionarContato?acao=excluir&email=<c:out value="${contato.email}"/>">Excluir</a></td>
                         </tr>
                     </c:forEach>
                 </tbody>
