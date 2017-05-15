@@ -25,7 +25,7 @@ public class Conexao {
     private final static String PORT = "3306";
     private final static String DRIVER = "com.mysql.jdbc.Driver";
 
-    public static Connection getConnection() {
+    public static Connection getConnection() throws Exception {
         try {
             if (connection == null) {
                 Class.forName(DRIVER);
@@ -34,7 +34,7 @@ public class Conexao {
             return connection;
         } catch (Exception ex) {
             ex.printStackTrace();
-            return null;
+            throw ex;
         }
     }
 
