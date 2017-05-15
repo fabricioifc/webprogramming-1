@@ -44,28 +44,28 @@ public class ContatoController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String forward = "";
-        String action = request.getParameter("acao");
+        String redirecionarPara = "";
+        String acao = request.getParameter("acao");
         HttpSession session = request.getSession();
 
-        if (action.equalsIgnoreCase("excluir")) {
+        if (acao.equalsIgnoreCase("excluir")) {
             String email = request.getParameter("email");
             contatoDao.excluir(session, email);
-            forward = LISTAR_CONTATOS;
+            redirecionarPara = LISTAR_CONTATOS;
             session.setAttribute("contatos", contatoDao.listar(session));
-        } else if (action.equalsIgnoreCase("editar")) {
-            forward = INSERIR_OU_EDITAR;
+        } else if (acao.equalsIgnoreCase("editar")) {
+            redirecionarPara = INSERIR_OU_EDITAR;
             String email = request.getParameter("email");
             Contato contato = contatoDao.buscarPorEmail(session, email);
             request.setAttribute("contato", contato);
-        } else if (action.equalsIgnoreCase("listar")) {
-            forward = LISTAR_CONTATOS;
+        } else if (acao.equalsIgnoreCase("listar")) {
+            redirecionarPara = LISTAR_CONTATOS;
             contatoDao.listar(session);
         } else {
-            forward = INSERIR_OU_EDITAR;
+            redirecionarPara = INSERIR_OU_EDITAR;
         }
 
-        RequestDispatcher view = request.getRequestDispatcher(forward);
+        RequestDispatcher view = request.getRequestDispatcher(redirecionarPara);
         view.forward(request, response);
     }
 
