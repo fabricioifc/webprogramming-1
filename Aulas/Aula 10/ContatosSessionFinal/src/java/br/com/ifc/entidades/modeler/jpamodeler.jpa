@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" v="4.2.1" rws="_149347289958339" Pws="_149347289958339" cws="_149347289958339" sm="false" xs="false" id="_14934728985481" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity xre="false" compositePrimaryKeyClass="IngredientesPK" abs="false" class="Ingredientes" v="true" m="false" rootElement="_14934728985481" id="_14934728985682">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="nome" id="_149347289858510">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="nome" unique="false" nullable="false" insertable="true" updatable="true" table="ingredientes" length="45"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="dthrcadastro" id="_149347289858511">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="dthrcadastro" unique="false" nullable="false" insertable="true" updatable="true" table="ingredientes"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Boolean" v="true" name="idativo" id="_149347289858512">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idativo" unique="false" nullable="true" insertable="true" updatable="true" table="ingredientes"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" name="idingrediente" id="_14934728985849">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idingrediente" unique="false" nullable="false" insertable="true" updatable="true" table="ingredientes"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:el/>
+        <jpa:table name="ingredientes"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PizzasPK" abs="false" class="Pizzas" v="true" m="false" rootElement="_14934728985481" id="_14934728985693">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="nome" id="_149347289858514">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="nome" unique="false" nullable="false" insertable="true" updatable="true" table="pizzas" length="45"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="dtcadastro" id="_149347289858515">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="dtcadastro" unique="false" nullable="false" insertable="true" updatable="true" table="pizzas"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="long" v="true" name="idpizzaria" id="_149347289858516">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpizzaria" unique="false" nullable="false" insertable="true" updatable="true" table="pizzas"/>
+            </jpa:basic>
+            <jpa:one-to-many own="true" collection-type="java.util.List" connected-entity-id="_14934728985682" v="true" name="ingredienteses" id="_149347309395248">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="Long" v="true" name="idpizza" id="_149347289858513">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpizza" unique="false" nullable="false" insertable="true" updatable="true" table="pizzas"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:el/>
+        <jpa:table name="pizzas"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PedidosPK" abs="false" class="Pedidos" v="true" m="false" rootElement="_14934728985481" id="_14934728985694">
+        <jpa:ts e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="double" v="true" name="valor" id="_149347289858518">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="valor" unique="false" nullable="false" insertable="true" updatable="true" table="pedidos"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="dthrcadastro" id="_149347289858519">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="dthrcadastro" unique="false" nullable="false" insertable="true" updatable="true" table="pedidos"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="long" v="true" name="idcliente" id="_149347289858520">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idcliente" unique="false" nullable="false" insertable="true" updatable="true" table="pedidos"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" name="idpedido" id="_149347289858517">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpedido" unique="false" nullable="false" insertable="true" updatable="true" table="pedidos"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:el/>
+        <jpa:table name="pedidos"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ClientesPK" abs="false" class="Clientes" v="true" m="false" rootElement="_14934728985481" id="_14934728985695">
+        <jpa:ts e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="nome" id="_149347289858522">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="nome" unique="false" nullable="false" insertable="true" updatable="true" table="clientes" length="80"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="telefone" id="_149347289858523">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="telefone" unique="false" nullable="true" insertable="true" updatable="true" table="clientes" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="endereco" id="_149347289858524">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="endereco" unique="false" nullable="false" insertable="true" updatable="true" table="clientes" length="150"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" name="idcliente" id="_149347289858521">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idcliente" unique="false" nullable="false" insertable="true" updatable="true" table="clientes"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:el/>
+        <jpa:table name="clientes"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PedidoItensPK" abs="false" class="PedidoItens" v="true" m="false" rootElement="_14934728985481" id="_14934728985696">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="boolean" v="true" name="borda" id="_149347289858826">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="borda" unique="false" nullable="false" insertable="true" updatable="true" table="pedido_itens"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="long" v="true" name="idpizza" id="_149347289858827">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpizza" unique="false" nullable="false" insertable="true" updatable="true" table="pedido_itens"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="long" v="true" name="idpedido" id="_149347289858828">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpedido" unique="false" nullable="false" insertable="true" updatable="true" table="pedido_itens"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" name="idpedidoItem" id="_149347289858525">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpedido_item" unique="false" nullable="false" insertable="true" updatable="true" table="pedido_itens"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="pedido_itens"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PizzariasPK" abs="false" class="Pizzarias" v="true" m="false" rootElement="_14934728985481" id="_14934728985697">
+        <jpa:ts e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="nome" id="_149347289858830">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="nome" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias" length="100"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" name="precoPeq" id="_149347289858831">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="preco_peq" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" name="precoMed" id="_149347289858832">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="preco_med" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" name="precoGrd" id="_149347289858833">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="preco_grd" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" name="precoBorda" id="_149347289858834">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="preco_borda" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="dtcadastro" id="_149347289858835">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="dtcadastro" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="dthralteracao" id="_149347289858836">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="dthralteracao" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" name="idpizzaria" id="_149347289858829">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpizzaria" unique="false" nullable="false" insertable="true" updatable="true" table="pizzarias"/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:el/>
+        <jpa:table name="pizzarias"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyType="D" compositePrimaryKeyClass="PizzaIngredientesPK" abs="false" class="PizzaIngredientes" v="true" m="false" rootElement="_14934728985481" id="_14934728985698">
+        <jpa:attributes>
+            <jpa:id attribute-type="long" v="true" name="idpizza" id="_149347289858937">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idpizza" unique="false" nullable="false" insertable="true" updatable="true" table="pizza_ingredientes"/>
+            </jpa:id>
+            <jpa:id attribute-type="long" v="true" name="idingrediente" id="_149347289858938">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="idingrediente" unique="false" nullable="false" insertable="true" updatable="true" table="pizza_ingredientes"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="pizza_ingredientes"/>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+ * This file was generated by the Jeddict
+ */</jpa:snp>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_149347289958339">
+            <i ref="_14934728985694" x="32" y="124">
+                <el/>
+            </i>
+            <i ref="_14934728985682" x="367" y="295">
+                <el/>
+            </i>
+            <i ref="_14934728985693" x="385" y="32">
+                <el/>
+            </i>
+            <i ref="_14934728985698" x="32" y="32">
+                <el/>
+            </i>
+            <i ref="_14934728985697" x="862" y="32">
+                <el/>
+            </i>
+            <i ref="_14934728985696" x="629" y="199">
+                <el/>
+            </i>
+            <i ref="_14934728985695" x="656" y="32">
+                <el/>
+            </i>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>
