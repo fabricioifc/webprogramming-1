@@ -13,7 +13,7 @@
         </p>
         <p>
             <strong>
-                Resultado: <%= request.getAttribute("resultado")%> quilômetros por litro.
+                Resultado: <%= request.getAttribute("kmPorLitro")%> quilômetros por litro.
             </strong>
         </p>
         <input type="button" value="Volar" onclick="history.back()" />
